@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="{{ lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ p.title }} - Jungwon AI</title>
+  <style>
+    :root {
+      --primary: #1e3a8a;
+      --accent: #2563eb;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --border: #e2e8f0;
+      --text: #1e293b;
+      --text-muted: #64748b;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 800px; margin: 0 auto; background: var(--card-bg); padding: 2rem; border-radius: 12px; border: 1px solid var(--border); box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+    .back-link { display: inline-block; margin-bottom: 1.5rem; color: var(--accent); text-decoration: none; font-weight: 600; font-size: 0.9rem; }
+    .back-link:hover { text-decoration: underline; }
+    .tag { display: inline-block; font-size: 0.8rem; font-weight: 600; padding: 0.25rem 0.6rem; border-radius: 4px; background: #eff6ff; color: var(--accent); margin-bottom: 0.5rem; }
+    h1 { font-size: 1.6rem; color: var(--primary); margin-bottom: 1.2rem; }
+    .section { margin-bottom: 1.5rem; padding-bottom: 1.2rem; border-bottom: 1px solid #f1f5f9; }
+    .section:last-child { border-bottom: none; }
+    h3 { font-size: 1.05rem; color: var(--primary); margin-bottom: 0.5rem; }
+    p, ul, ol { color: #334155; font-size: 0.95rem; }
+    ul, ol { padding-left: 1.5rem; }
+    li { margin-bottom: 0.35rem; }
+    .alert-box { background: #fef2f2; border-left: 4px solid #ef4444; padding: 0.85rem 1.2rem; border-radius: 4px; margin-top: 1rem; }
+    .alert-box p { color: #991b1b; font-size: 0.88rem; }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <a href="/?lang={{ lang }}&tab=procedures" class="back-link">{{ t.back_home }}</a>
+  
+  <span class="tag">{{ p.category }}</span>
+  <h1>{{ p.title }}</h1>
+
+  <div class="section">
+    <h3>📌 {{ t.purpose }}</h3>
+    <p>{{ p.purpose }}</p>
+  </div>
+
+  <div class="section">
+    <h3>👤 {{ t.who }}</h3>
+    <p>{{ p.who }}</p>
+  </div>
+
+  <div class="section">
+    <h3>📄 {{ t.required_docs }}</h3>
+    <ul>
+      {% for doc in p.documents %}
+      <li>{{ doc }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="section">
+    <h3>🚶 {{ t.steps }}</h3>
+    <ol>
+      {% for step in p.steps %}
+      <li>{{ step }}</li>
+      {% endfor %}
+    </ol>
+  </div>
+
+  <div class="section">
+    <h3>⏰ {{ t.timing }}</h3>
+    <p>{{ p.timing }}</p>
+  </div>
+
+  <div class="section">
+    <h3>🏛️ {{ t.office }}</h3>
+    <p>{{ p.office }}</p>
+  </div>
+
+  <div class="alert-box">
+    <h3>⚠️ {{ t.notes }}</h3>
+    <p>{{ p.notes }}</p>
+    <small style="color:#b91c1c; display:block; margin-top:0.3rem;">출처: {{ p.source }}</small>
+  </div>
+</div>
+
+</body>
+</html>

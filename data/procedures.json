@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "category": "휴학 (Leave of Absence)",
+    "title": "휴학 안내",
+    "purpose": "학생이 일정 기간 학업을 중단하고 휴학 절차를 확인할 수 있도록 안내하는 화면입니다.",
+    "who": "휴학을 신청하려는 학생",
+    "documents": ["공식 휴학 신청서", "학교가 요구하는 추가 서류"],
+    "steps": ["휴학 가능 기간과 자격을 학교 공식 안내에서 확인", "필요 서류를 준비", "학교가 지정한 신청 방법으로 신청", "처리 결과와 학적 상태를 확인"],
+    "timing": "정확한 신청 기간은 해당 학기 공식 공지를 확인해야 합니다.",
+    "office": "학교 학사/행정 담당 부서",
+    "notes": "이 프로젝트 문서는 휴학 기능이 필요하다고만 설명하며 실제 신청 기간·서류·담당 부서의 세부 규정은 제공하지 않습니다.",
+    "source": "Jungwon University AI Student Assistant project specification"
+  },
+  {
+    "id": 2,
+    "category": "복학 (Return from Leave)",
+    "title": "복학 안내",
+    "purpose": "휴학 후 복학을 준비하는 학생에게 필요한 확인 항목을 보여줍니다.",
+    "who": "복학 예정 학생",
+    "documents": ["공식 복학 신청서", "학교가 요구하는 추가 서류"],
+    "steps": ["복학 신청 기간 확인", "복학 자격과 학적 상태 확인", "필요 서류 준비", "복학 신청 후 처리 결과 확인"],
+    "timing": "정확한 기간은 해당 학기 공식 공지를 확인해야 합니다.",
+    "office": "학교 학사/행정 담당 부서",
+    "notes": "실제 중원대학교 규정과 기간은 공식 자료를 연결한 후 이 데이터에 반영해야 합니다.",
+    "source": "Jungwon University AI Student Assistant project specification"
+  },
+  {
+    "id": 3,
+    "category": "증명서 (Certificates)",
+    "title": "증명서 발급 안내",
+    "purpose": "학생이 필요한 증명서의 발급 방법을 확인할 수 있도록 구성한 메뉴입니다.",
+    "who": "재학·졸업 등 증명서가 필요한 학생",
+    "documents": ["신분 확인에 필요한 정보", "학교가 요구하는 추가 정보"],
+    "steps": ["필요한 증명서 종류 확인", "학교가 제공하는 발급 방법 확인", "발급 신청", "증명서 수령 또는 온라인 발급"],
+    "timing": "발급 가능 시간과 비용은 공식 학교 안내를 확인해야 합니다.",
+    "office": "학교 증명서/학사 관련 담당 부서",
+    "notes": "증명서 종류·수수료·발급 장소 등은 제공된 프로젝트 문서에 구체적으로 적혀 있지 않습니다.",
+    "source": "Jungwon University AI Student Assistant project specification"
+  },
+  {
+    "id": 4,
+    "category": "장학금 (Scholarships)",
+    "title": "장학금 안내",
+    "purpose": "학생이 장학금 공지에서 대상·기간·신청 방법을 확인하도록 돕는 메뉴입니다.",
+    "who": "장학금 신청 또는 자격 확인이 필요한 학생",
+    "documents": ["장학금별 요구 서류"],
+    "steps": ["장학금 공지 확인", "지원 대상과 조건 확인", "신청 기간 확인", "요구 서류 준비", "신청 후 결과 확인"],
+    "timing": "장학금마다 기간이 다를 수 있으므로 최신 공식 공지를 확인해야 합니다.",
+    "office": "학교 장학/학생지원 관련 담당 부서",
+    "notes": "이 프로젝트 문서는 장학금 기능과 AI가 대상·마감일·방법을 설명하는 예시를 제시하지만 실제 장학금 조건은 제공하지 않습니다.",
+    "source": "Jungwon University AI Student Assistant project specification"
+  },
+  {
+    "id": 5,
+    "category": "졸업요건 (Graduation Requirements)",
+    "title": "졸업요건 확인",
+    "purpose": "학생이 졸업에 필요한 학사 조건을 확인할 수 있도록 구성한 메뉴입니다.",
+    "who": "졸업을 준비하는 학생",
+    "documents": ["학과·학번별 최신 졸업요건 안내"],
+    "steps": ["학과와 입학년도 확인", "최신 졸업요건 자료 확인", "이수 학점·필수 과목 등 항목 확인", "부족한 항목을 학업 계획에 반영", "최종적으로 학교 공식 담당 부서에 확인"],
+    "timing": "학과와 입학년도에 따라 기준이 달라질 수 있으므로 최신 공식 자료가 필요합니다.",
+    "office": "소속 학과 및 학사 관련 담당 부서",
+    "notes": "제공된 프로젝트 문서는 졸업요건 조회 기능을 요구하지만 실제 학점·과목 기준은 포함하지 않습니다.",
+    "source": "Jungwon University AI Student Assistant project specification"
+  },
+  {
+    "id": 6,
+    "category": "기숙사 (Dormitory)",
+    "title": "기숙사 안내",
+    "purpose": "기숙사 관련 정보를 학생이 쉽게 찾도록 구성한 메뉴입니다.",
+    "who": "기숙사 입사·생활 정보를 확인하려는 학생",
+    "documents": ["기숙사 공식 신청 자료", "학교가 요구하는 추가 서류"],
+    "steps": ["기숙사 모집 공지 확인", "신청 자격과 기간 확인", "필요 서류 준비", "신청", "선발·배정 결과 확인"],
+    "timing": "모집 기간과 비용 등은 최신 기숙사 공지를 확인해야 합니다.",
+    "office": "학교 기숙사 관련 담당 부서",
+    "notes": "프로젝트 문서에는 기숙사가 주요 행정 안내 항목으로 포함되어 있으나 실제 규정·비용·일정은 제공되지 않았습니다.",
+    "source": "Jungwon University AI Student Assistant project specification"
+  }
+]
