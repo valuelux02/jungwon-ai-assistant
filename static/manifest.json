@@ -1,0 +1,35 @@
+{
+  "name": "중원대학교 AI 학생 어시스턴트 (Jungwon CampusMate)",
+  "short_name": "중원대 AI",
+  "description": "sLLM 학사·행정 Q&A, 5개국어 실시간 통번역, 스마트 행정 서식 앱",
+  "start_url": "/?pwa=1",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f8fafc",
+  "theme_color": "#1e3a8a",
+  "icons": [
+    {
+      "src": "/static/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "AI 챗봇",
+      "url": "/?tab=chat",
+      "description": "학사 행정 질의응답 챗봇"
+    },
+    {
+      "name": "다국어 번역기",
+      "url": "/?tab=translate",
+      "description": "5개 국어 실시간 번역"
+    },
+    {
+      "name": "스마트 서식",
+      "url": "/?tab=forms",
+      "description": "휴학/복학/알바허가서 서식 생성"
+    }
+  ]
+}

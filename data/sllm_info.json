@@ -1,0 +1,19 @@
+{
+  "name": "중원대학교 학사·행정 챗봇",
+  "version": "3.1",
+  "engine_file": "sllm_engine.py",
+  "engine_type": "keyword_retrieval_and_templates",
+  "description": "프로젝트의 학사·행정 JSON 자료에서 키워드로 관련 항목을 찾고 정해진 형식으로 답변을 구성합니다. 현재 신경망 sLLM 모델 가중치나 모델 추론 서버는 연결되어 있지 않습니다.",
+  "knowledge_files": ["data/procedures.json", "data/notices.json"],
+  "related_files": ["data/calendar.json", "form_generator.py"],
+  "supported_languages": ["ko", "vi", "en", "km", "ne", "uz"],
+  "topics": ["휴학", "복학", "장학금", "증명서", "졸업요건", "기숙사", "비자", "수강신청", "등록금", "시설/식당"],
+  "translation": {
+    "source_detection": "auto",
+    "providers": ["Google Translate 공개 웹 엔드포인트", "MyMemory 공개 API"],
+    "local_glossary": "sllm_engine.py의 ACADEMIC_TERMS",
+    "requires_network": true,
+    "notice": "일반 문장 번역은 입력 내용을 외부 번역 서비스로 전송합니다. 제공자의 이용 제한이나 네트워크 상태에 따라 실패할 수 있습니다. 학사 용어 사전은 오프라인에서도 동작합니다."
+  },
+  "maintenance": "행정 안내는 knowledge_files의 원본을 수정하고, 챗봇 소개와 구성 정보는 이 파일을 수정하세요. 이 파일은 모델 학습 데이터나 모델 파일이 아닙니다."
+}

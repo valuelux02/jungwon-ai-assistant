@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "title": "2026학년도 1학기 수강신청 기간",
+    "title_en": "2026-1 Course Registration Period",
+    "title_vi": "Thời gian đăng ký môn học học kỳ 1 năm 2026",
+    "title_uz": "2026-1 semestr fanlarga ro'yxatdan o'tish",
+    "title_ne": "२०२६-१ पाठ्यक्रम दर्ता अवधि",
+    "category": "수강신청",
+    "start_date": "2026-02-16",
+    "end_date": "2026-02-20",
+    "d_day": "D-12",
+    "importance": "high",
+    "description": "학년별 지정일에 종합정보시스템에서 수강신청 진행 (10:00 오픈)"
+  },
+  {
+    "id": 2,
+    "title": "외국인 유학생 체류기간(D-2 비자) 연장 집중 신청",
+    "title_en": "D-2 Visa Extension Intensive Period for International Students",
+    "title_vi": "Đợt cao điểm gia hạn visa D-2 cho du học sinh",
+    "title_uz": "Xorijiy talabalar uchun D-2 vizasini uzaytirish davri",
+    "title_ne": "विदेशी विद्यार्थी D-2 भिसा थप अवधि",
+    "category": "비자/유학생",
+    "start_date": "2026-02-01",
+    "end_date": "2026-02-28",
+    "d_day": "D-18",
+    "importance": "critical",
+    "description": "3월 만료 예정 유학생 하이코리아 사전예약 및 국제교류원 서류 점검"
+  },
+  {
+    "id": 3,
+    "title": "2026학년도 1학기 생활관(기숙사) 결핵진단서 제출 마감",
+    "title_en": "Dormitory TB Test Certificate Submission Deadline",
+    "title_vi": "Hạn nộp giấy khám lao phổi (X-ray) ký túc xá",
+    "title_uz": "Yotoqxona sil kasalligi ma'lumotnomasini topshirish muddati",
+    "title_ne": "छात्रावास क्षयरोग परीक्षण रिपोर्ट बुझाउने अन्तिम मिति",
+    "category": "기숙사",
+    "start_date": "2026-02-22",
+    "end_date": "2026-02-25",
+    "d_day": "D-22",
+    "importance": "high",
+    "description": "입사 당일 결핵진단서 미지참 시 입실 절대 불가 (보건소 검사 요망)"
+  },
+  {
+    "id": 4,
+    "title": "2026학년도 1학기 신입생·재학생 등록금 정규 납부",
+    "title_en": "2026-1 Tuition Regular Payment Period",
+    "title_vi": "Thời gian nộp học phí chính thức học kỳ 1 năm 2026",
+    "title_uz": "2026-1 semestr o'qish to'lovini to'lash muddati",
+    "title_ne": "२०२६-१ ट्यूशन शुल्क नियमित भुक्तानी अवधि",
+    "category": "등록금",
+    "start_date": "2026-02-23",
+    "end_date": "2026-02-27",
+    "d_day": "D-25",
+    "importance": "critical",
+    "description": "개인별 가상계좌 입금 (은행 영업시간 09:00~16:00 준수, 분할납부 신청 가능)"
+  },
+  {
+    "id": 5,
+    "title": "2026학년도 1학기 개강 및 수강정정(Add/Drop) 기간",
+    "title_en": "Spring 2026 Semester Opening & Course Add/Drop Period",
+    "title_vi": "Khai giảng và thời gian thay đổi môn học (Add/Drop)",
+    "title_uz": "Darslarning boshlanishi va fanlarni o'zgartirish davri",
+    "title_ne": "कक्षा सुरु र पाठ्यक्रम थप/घटाउ अवधि",
+    "category": "학사일정",
+    "start_date": "2026-03-02",
+    "end_date": "2026-03-06",
+    "d_day": "D-32",
+    "importance": "medium",
+    "description": "개강 첫째 주 수강신청 변경 및 포기 마감 (마감 후 과목 변경 불가)"
+  }
+]

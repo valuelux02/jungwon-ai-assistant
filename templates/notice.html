@@ -22,9 +22,13 @@
       line-height: 1.6;
       padding: 2rem 1rem;
     }
-    .container { max-width: 800px; margin: 0 auto; background: var(--card-bg); padding: 2rem; border-radius: 12px; border: 1px solid var(--border); box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
-    .back-link { display: inline-block; margin-bottom: 1.5rem; color: var(--accent); text-decoration: none; font-weight: 600; font-size: 0.9rem; }
+    .container { max-width: 820px; margin: 0 auto; background: var(--card-bg); padding: 2.2rem; border-radius: 12px; border: 1px solid var(--border); box-shadow: 0 2px 6px rgba(0,0,0,0.04); }
+    .top-bar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 0.5rem; }
+    .back-link { color: var(--accent); text-decoration: none; font-weight: 600; font-size: 0.9rem; }
     .back-link:hover { text-decoration: underline; }
+    .lang-bar { display: flex; gap: 0.2rem; background: #f1f5f9; padding: 0.2rem; border-radius: 6px; }
+    .lang-btn { font-size: 0.75rem; padding: 0.2rem 0.5rem; text-decoration: none; color: var(--text-muted); font-weight: 600; border-radius: 4px; }
+    .lang-btn.active { background: var(--primary); color: white; }
     .meta-bar {
       display: flex;
       gap: 1rem;
@@ -67,38 +71,50 @@
     }
     .link-btn:hover { background: #172554; }
   </style>
+  <link rel="stylesheet" href="{{ url_for('static', filename='campus.css') }}?v=4">
 </head>
-<body>
+<body class="detail-page">
 
 <div class="container">
-  <a href="/?lang={{ lang }}&tab=notices" class="back-link">{{ t.back_home }}</a>
+  <div class="top-bar">
+    <a href="/?lang={{ lang }}&tab=notices" class="back-link">{{ t.back_home }}</a>
+    <div class="lang-bar">
+      {% for lk, lv in languages_meta.items() %}
+      <a href="/notice/{{ raw_n.id }}?lang={{ lk }}" class="lang-btn {% if lang==lk %}active{% endif %}">
+        {{ lv.flag }} {{ lk|upper }}
+      </a>
+      {% endfor %}
+    </div>
+  </div>
   
-  <span class="tag">[{{ n.category }}]</span>
+  <span class="tag">[{{ raw_n.category }}]</span>
   <h1>{{ n.title }}</h1>
 
   <div class="meta-bar">
     <span><b>{{ t.author }}:</b> {{ n.author }}</span>
-    <span><b>{{ t.date }}:</b> {{ n.date }}</span>
+    <span><b>{{ t.date }}:</b> {{ raw_n.date }}</span>
   </div>
 
   <div class="content">
     {{ n.content }}
   </div>
 
-  {% if n.attachments %}
+  {% if raw_n.attachments %}
   <div class="attachments-box">
     <h4>📎 {{ t.required_docs }} / 첨부파일</h4>
     <ul>
-      {% for att in n.attachments %}
+      {% for att in raw_n.attachments %}
       <li>📄 {{ att }} (다운로드)</li>
       {% endfor %}
     </ul>
   </div>
   {% endif %}
 
-  {% if n.link %}
+  {% if raw_n.link %}
   <div>
-    <a href="{{ n.link }}" target="_blank" class="link-btn">학교 공식 홈페이지 공지 확인 ↗</a>
+    <a href="{{ raw_n.link }}" target="_blank" rel="noopener noreferrer" class="link-btn">
+      학교 공식 홈페이지 공지 확인하기 →
+    </a>
   </div>
   {% endif %}
 </div>
